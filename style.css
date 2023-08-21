@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url("fonts/norse-bold_1-webfont.woff");
+    src: url("fonts/norse-bold_1-webfont.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/lato-italic-webfont.woff");
+    src: url("fonts/lato-italic-webfont.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#back-img {
+    background-image: url('images/background-form.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 400px; 
+    z-index: -1;
+  }
+
+  #logo-container{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #logo{
+    width: 100%;
+    height: 135px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px
+  }
+
+  #logo-img{
+    height: 100px;
+  }
+
+  #logo-text{
+    font-family: "norse-bold";
+    font-size: 85px;
+    color: white;
+  }
+
+ #credits{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    margin-left: 110px;
+  }
+
+  .credit{
+    color: white;
+    text-decoration: underline;
+    font-weight: normal;
+  }
+
+  .credit:hover{
+    color: black;
+  }
+
+
+#text{
+    margin-top: 40px;
+    margin-left: 430px;
+    margin-bottom: 20px;
+    width: 600px;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#form-container{
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-left: 400px;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    width: 930px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 3px 3px 10px -1px rgb(194, 194, 194);
+    z-index: 1;
+}
+
+#form{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position:  relative;
+    width: 580px;
+    height: auto;
+    gap: 16px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#title-form{
+    font-size: 26px;
+    margin: 0;
+}
+
+label{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    position: relative;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+span{
+    position: relative;
+    left: 248px;
+    bottom: 22px;
+    
+}
+
+input{
+    display: block;
+    font: 1em sans-serif;
+    width: 240px;
+    box-sizing: border-box;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+}
+
+input:focus{
+ border: 2px solid rgb(73, 138, 236);
+ box-shadow: 3px 3px 10px -1px rgb(102, 102, 102);
+}
+
+.error:valid{
+    border: 2px solid #596d48;
+}
+
+.error:invalid{
+    border: 2px solid rgb(187, 56, 56);
+}
+
+.error:invalid + span::before{
+    content: "✗";
+    color: red;
+}
+
+.error:valid + span::before{
+    content: "✔";
+    color: #228B22;
+}
+
+#submit-button{
+    padding-top: 30px;
+    margin-left: 430px;
+}
+
+#button{
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(250, 250, 250);
+    border: none;
+    background-color:  #596D48;
+    padding: 10px 45px;
+}
+
+#button-text{
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(250, 250, 250);
+}
+
+#button:hover{
+    background-color: #3B5323;
+}
+
+#already{
+    margin-left: 430px;
+    padding-top: 10px;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
+}
+
+a:hover{
+    color: #228B22;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up Form</title>
+</head>
+
+<body>
+    <div id="back-img">
+        <div id="logo-container">
+            <div id="logo">
+                <img src="images/odin-logo.png" alt="LOGO" id="logo-img">
+                <p id="logo-text">ODIN</p>
+            </div>
+        </div>
+        <div id="credits">
+            <p>Photo by <a href="https://unsplash.com/es/fotos/bTzpau9mKT4" target="_blank" class="credit">Halie
+                    West</a> on <a href="https://unsplash.com/es" target="_blank" class="credit">Unplash</a></p>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="text">
+            <p>
+                This is not real online service! You know you need something
+                like this in yor life to help you realize your deepest dreams.
+                Sign up know to get started.
+            </p>
+            <p>
+                You know you want to.
+            </p>
+        </div>
+        <div id="form-container">
+
+            <h3 id="title-form">Let's do this!</h3>
+            <form action="" id="form">
+                <div id="Uname" class="controls">
+                    <label for="name">FIRST NAME</label>
+                    <input type="text" name="name" id="name" required placeholder="Axel">
+                </div>
+                <div id="u-last-name" class="controls">
+                    <label for="last-name"> LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name" required placeholder="Constantino">
+                </div>
+                <div id="mail" class="controls">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="mail" id="email" required placeholder="Axel@email.com">
+                </div>
+                <div id="phone" class="controls">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone-number" required placeholder="0123456789">
+                </div>
+                <div id="password" class="controls">
+                    <label for="psw">PASSWORD</label>
+                    <input type="password" name="password" id="psw" class="error" required minlength="6" maxlength="32"
+                        placeholder="ej. password123">
+                    <span class="err"></span>
+                </div>
+                <div id="confirm" class="controls">
+                    <label for="confirm-psw"> CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm" id="confirm-psw" class="error" required minlength="6"
+                        maxlength="32">
+                    <span class="err"></span>
+                </div>
+            </form>
+        </div>
+
+        <div id="submit-button">
+            <button type="submit" id="button"><a href="" id="button-text">Create Account</a></button>
+        </div>
+        <div id="already">
+            Already have an account? <a href="">Log in</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
